@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven & María Fernanda - Nuestra Boda</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="BOD.css">
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <p class="hero-text">¡Tenemos el placer de invitarte a nuestra boda!</p>
+    <h1 class="names">Steven & María Fernanda</h1>
+  </header>
+
+  <!-- CUENTA REGRESIVA -->
+  <section class="section countdown-section">
+    <h2>Falta muy poco...</h2>
+    <div id="countdown" class="countdown-timer">
+      <div class="countdown-box"><span id="days">00</span><p>Días</p></div>
+      <div class="countdown-box"><span id="hours">00</span><p>Horas</p></div>
+      <div class="countdown-box"><span id="minutes">00</span><p>Minutos</p></div>
+      <div class="countdown-box"><span id="seconds">00</span><p>Segundos</p></div>
+    </div>
+  </section>
+
+  <!-- CITA BÍBLICA -->
+  <section class="section verse-section">
+    <div class="verse-content">
+      <p class="verse-text">
+        "Y ahora permanecen la fe, la esperanza y el amor, estos tres;
+        pero el mayor de ellos es el amor."
+      </p>
+      <p class="verse-reference">— 1 Corintios 13:13</p>
+    </div>
+  </section>
+
+  <!-- DETALLES DEL EVENTO -->
+  <section class="section details-section">
+    <h2>Detalles del Evento</h2>
+    <div class="details-container">
+      <div class="detail-box">
+        <i class="icon">📅</i>
+        <h3>Fecha</h3>
+        <p>Sábado, 6 de Diciembre de 2025</p>
+      </div>
+      <div class="detail-box">
+        <i class="icon">⏱</i>
+        <h3>Hora</h3>
+        <p>11:00 a.m.</p>
+      </div>
+      <div class="detail-box">
+        <i class="icon">📍</i>
+        <h3>Lugar</h3>
+        <p>Salón Las Golondrinas, San Rafael de Cartago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="section map-section">
+    <h2>Ubicación</h2>
+    <p>Para llegar fácilmente al salón, usa este enlace:</p>
+    <iframe src="https://www.google.com/maps?q=Sal%C3%B3n+las+Golondrinas,+San+Rafael+de+Cartago,+Costa+Rica&output=embed" 
+            allowfullscreen="" loading="lazy"></iframe>
+    <br>
+    <a href="https://www.google.com/maps?q=Sal%C3%B3n+las+Golondrinas,+San+Rafael+de+Cartago,+Costa+Rica" 
+       target="_blank" class="map-link">Ver en Google Maps</a>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section gallery-section">
+    <h2>Nuestra Historia</h2>
+    <p>Un vistazo a nuestro camino juntos:</p>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="img/foto1.jpg" alt="Steven y María Fernanda 1" class="carousel-image">
+        </div>
+        <div class="carousel-slide">
+          <img src="img/foto2.jpg" alt="Steven y María Fernanda 2" class="carousel-image">
+        </div>
+        <div class="carousel-slide">
+          <img src="img/foto3.jpg" alt="Steven y María Fernanda 3" class="carousel-image">
+        </div>
+      </div>
+      <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- MÚSICA -->
+  <section class="section music-section">
+    <h2>¡A bailar!</h2>
+    <p>Dale play a nuestra canción:</p>
+    <audio controls loop>
+      <source src="song/tucancion.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p>&copy; 2025 Steven & María Fernanda. ¡Te esperamos con alegría!</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
